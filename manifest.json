@@ -1,0 +1,26 @@
+{
+  "name": "Lista Jheny",
+  "short_name": "Lista",
+  "description": "Una lista de compras sencilla y funcional.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d94f70",
+  "icons": [
+    {
+      "src": "images/icono-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icono-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    }
+  ]
+}

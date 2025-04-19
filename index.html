@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <title>Lista Jheny</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="logoContainer">
+    <img src="images/logo.png" alt="Logotipo de Lista Jheny" id="logo" style="max-width: 150px; height: auto; margin-bottom: 20px;">
+  </div>
+
+  <h1>🛒 Lista Jheny</h1>
+
+  <div class="formulario">
+    <!-- Row 1: Proveedor dropdown -->
+    <div class="fila fila-gestionable">
+      <select id="proveedorInput" class="select-igual"></select>
+      <button type="button" class="boton-igual" onclick="mostrarGestionProveedores()">⚙️</button>
+    </div>
+    
+    <!-- UI para gestionar proveedores (invisible por defecto) -->
+    <div id="gestionProveedores" style="display:none; margin-bottom: 20px;">
+      <input type="text" id="nuevoProveedorInput" placeholder="Nuevo proveedor..." />
+      <button onclick="agregarProveedor()">Agregar</button>
+      <ul id="listaProveedores"></ul>
+    </div>
+  
+    <!-- Row 2: Text + Number inputs side by side -->
+    <div class="fila">
+      <input type="text" id="productoInput" placeholder="Escribe un producto..." />
+      <input type="number" id="cantidadInput" placeholder="Cantidad" />
+    </div>
+  
+    <!-- Row 3: Agregar button -->
+    <div class="fila">
+      <button class="boton-igual" onclick="agregarProducto()">Agregar</button>
+    </div>
+  </div>
+
+  <div id="mensajeError" class="mensaje-error" style="display: none;"></div>
+  <label for="proveedorSelector">Selecciona un proveedor:</label>
+
+  <div class="fila fila-selector">
+    <select id="proveedorSelector" class="select-igual" onchange="filtrarPorProveedor(this.value)"></select>
+    <button class="boton-igual" onclick="imprimirLista()">Imprimir</button>
+  </div>
+
+  <h2>Lista Organizada</h2>
+  <div id="listaOrganizada"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

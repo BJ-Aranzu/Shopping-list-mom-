@@ -1,0 +1,199 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  color: #333;
+  padding: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #8093f1;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+button {
+  padding: 14px 24px;
+  background: linear-gradient(145deg, #8093f1, #b388eb);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(145deg, #b388eb, #8093f1);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid #8093f1;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin-top: 25px;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+h3 i {
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: "🛍 ";
+  padding-left: 25px;
+}
+
+li {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.fila button {
+  flex: none; /* Prevent it from expanding */
+  width: fit-content; /* Fit to its content */
+}
+
+.fila select,
+.fila input[type="text"],
+.fila input[type="number"],
+.fila button {
+  padding: 14px 18px;
+  font-size: 18px;
+}
+
+.fila-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.fila-selector label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #8093f1;
+}
+
+.fila-selector select {
+  min-width: 180px;
+}
+
+.fila-selector button {
+  padding: 12px 20px;
+  width: fit-content;
+}
+
+.eliminar {
+  background-color: #b388eb;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.eliminar:hover {
+  background-color: #8093f1;
+}
+
+label[for="proveedorSelector"] {
+  display: block;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8093f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+#proveedorSelector,
+#proveedorInput {
+  display: flex;
+  align-items: center;     /* Center vertically */
+  justify-content: center; /* Optional: also centers horizontally */
+  text-align: center;      /* Center the text */
+  
+  padding: 14px 24px;
+  background: linear-gradient(145deg, #b388eb, #8093f1);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#proveedorSelector:hover,
+#proveedorInput:hover {
+  background: linear-gradient(145deg, #8093f1, #b388eb);
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+select option {
+  color: #333;
+  background: #fff;
+}
+
+.boton-igual,
+.select-igual {
+  min-width: 220px;
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+}
+
+.fila-gestionable {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+table {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Center the "Cantidad" column */
+th:nth-child(3),
+td:nth-child(3) {
+  text-align: center !important;
+}
